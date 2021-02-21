@@ -1,4 +1,4 @@
-# SkunkNet Secure Stableclin Streaming Network (sTT)
+# SkunkNet Secure Stablecoin Streaming Network (sTT)
 - Self Organized and Self Stablized Stablecoin Secure & Scalable Streaming Protocol on Matic Network
 
 ## Introduction
