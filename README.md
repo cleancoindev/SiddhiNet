@@ -14,6 +14,10 @@ SiddhiNet is a Secure Streaming Network for Skilled Professionals of Soverign In
 - SiddhiStream >> https://testnet.bscscan.com/tx/0x3dc97c2498384522c0e82a97f73d891599fdb0cc9d6f4a8b7d14b6c7a772d8fe
 
 ## Features
+- Skill Self Verification through Privcy Preserving Zokrates Contracts
+- Skill Summary Verification through Privacy Preserving Zokrates Contracts
+- Skill Sequence Verification through Privacy Preserving Zokrates Contracts
+- Skill Social Verification through Minimal Anti Collusion Framework
 - Skill Streaming with Time Locked Pause and Freeze Facilities
 - Skill Token Distribution over Money Streaming Protocol
 - Skill Token Supply Expansion and Contraction on Bonding Curves
