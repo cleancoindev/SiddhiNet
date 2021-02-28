@@ -19,13 +19,13 @@ import "./ReentrancyGuard.sol";
 import "./IBondingCurve.sol";
 import "./BancorFormula.sol";
 
-import "./SemiottToken.sol";
+import "./SiddhiToken.sol";
 
-contract SemiottCurve is Ownable, ReentrancyGuard, BancorFormula {
+contract SiddhiCurve is Ownable, ReentrancyGuard, BancorFormula {
 
   using SafeMath for uint256;
 
-  SemiottToken public mToken;
+  SiddhiToken public sToken;
   
       /*
         reserve ratio, represented in ppm, 1-1000000
@@ -40,7 +40,7 @@ contract SemiottCurve is Ownable, ReentrancyGuard, BancorFormula {
       
       require(_tokenAddress != address(0));
       // instantiate deployed Ocean token contract
-      mToken = SemiottToken(_tokenAddress);
+      sToken = SiddhiToken(_tokenAddress);
       // initial available supply of bonded token
       supply = 100;
       // inital price for bonded token
@@ -80,7 +80,7 @@ contract SemiottCurve is Ownable, ReentrancyGuard, BancorFormula {
     if(supply > 0) {
       uint256 amount = (_ntoken > supply) ? supply : _ntoken;
       // make payment
-      require(mToken.transferFrom(msg.sender, address(this), amount.mul(initPrice)));
+      require(sToken.transferFrom(msg.sender, address(this), amount.mul(initPrice)));
       // update balance
       mHolders[msg.sender].ntoken = mHolders[msg.sender].ntoken.add(amount);
       // update supply
@@ -101,7 +101,7 @@ contract SemiottCurve is Ownable, ReentrancyGuard, BancorFormula {
       // calculate cost
       uint256 cost = num.mul(mHolders[seller].target);
       // make payment
-      require(mToken.transferFrom(msg.sender, mHolders[seller].holder, cost));
+      require(sToken.transferFrom(msg.sender, mHolders[seller].holder, cost));
       // update seller balance
       mHolders[seller].ntoken = mHolders[seller].ntoken.sub(num);
       // update buyer balance
@@ -118,9 +118,9 @@ contract SemiottCurve is Ownable, ReentrancyGuard, BancorFormula {
     // calculate payout of reserved token
     uint256 payout = amount.mul(initPrice);
     // ensure the contract has enough reserved token to pay out
-    require(mToken.balanceOf(address(this)) >= payout);
+    require(sToken.balanceOf(address(this)) >= payout);
     // transfer reserved token to holder
-    require(mToken.transfer(msg.sender, payout));
+    require(sToken.transfer(msg.sender, payout));
     // decrease the balance of bonded token for seller
     mHolders[msg.sender].ntoken = mHolders[msg.sender].ntoken.sub(amount);
     // update supply
