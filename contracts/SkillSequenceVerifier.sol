@@ -4,9 +4,9 @@ pragma solidity >=0.6.0 <0.8.0;
 pragma experimental ABIEncoderV2;
 
 import "./Utils.sol";
-import "./InnerProductVerifier.sol";
+import "./SkillSelfVerifier.sol";
 
-contract BurnVerifier {
+contract SkillSequenceVerifier {
     using Utils for uint256;
     using Utils for Utils.G1Point;
 
