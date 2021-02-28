@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: Apache License 2.0
 
 pragma solidity >=0.6.0 <0.8.0;
 pragma experimental ABIEncoderV2;
@@ -9,7 +9,7 @@ import "./SafeMath.sol";
 import "./Context.sol";
 
 /**
- * @title SemiottCoin
+ * @title SiddhiCoin
  * @dev this contract is a Pausable ERC20 token with Burn and Mint
  * controleld by a central SupplyController. By implementing BCC StablecoinImplementation
  * this contract also includes external methods for setting
@@ -21,7 +21,7 @@ import "./Context.sol";
  * with insufficient funds since no tokens will be issued there.
  */
  
-contract SemiottCoin is Initializable, ReentrancyGuard, Context  {
+contract SiddhiCoin is Initializable, ReentrancyGuard, Context  {
 
 
     using SafeMath for uint256;
