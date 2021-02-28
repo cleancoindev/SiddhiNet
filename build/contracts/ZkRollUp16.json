@@ -36,7 +36,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256[2]\",\"name\":\"a\",\"type\":\"uint256[2]\"},{\"internalType\":\"uint256[2][2]\",\"name\":\"b\",\"type\":\"uint256[2][2]\"},{\"internalType\":\"uint256[2]\",\"name\":\"c\",\"type\":\"uint256[2]\"},{\"internalType\":\"uint256[36]\",\"name\":\"input\",\"type\":\"uint256[36]\"}],\"name\":\"verifyTx\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"r\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/gokulalex/Apps/bsc_apps/SemiotNet/contracts/zkInterfaces.sol\":\"ZkRollUp16\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gokulalex/Apps/bsc_apps/SemiotNet/contracts/zkInterfaces.sol\":{\"keccak256\":\"0x480d8e815688f729ed12f5dc60fecd9476789cc51823d6149aff64f3ef33ea09\",\"license\":\"Apache License 2.0\",\"urls\":[\"bzz-raw://61468d3362c316bec2dacf5441e8d15bea82a6352ec7d347fa06ab58e5e100b3\",\"dweb:/ipfs/QmZ1oM4WDbkTCy3icd8SLqdN84o8fZCgL2Dxr4C5o19KCY\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256[2]\",\"name\":\"a\",\"type\":\"uint256[2]\"},{\"internalType\":\"uint256[2][2]\",\"name\":\"b\",\"type\":\"uint256[2][2]\"},{\"internalType\":\"uint256[2]\",\"name\":\"c\",\"type\":\"uint256[2]\"},{\"internalType\":\"uint256[36]\",\"name\":\"input\",\"type\":\"uint256[36]\"}],\"name\":\"verifyTx\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"r\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/gokulalex/Apps/eth_apps/SiddhiNet/contracts/zkInterfaces.sol\":\"ZkRollUp16\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gokulalex/Apps/eth_apps/SiddhiNet/contracts/zkInterfaces.sol\":{\"keccak256\":\"0x480d8e815688f729ed12f5dc60fecd9476789cc51823d6149aff64f3ef33ea09\",\"license\":\"Apache License 2.0\",\"urls\":[\"bzz-raw://61468d3362c316bec2dacf5441e8d15bea82a6352ec7d347fa06ab58e5e100b3\",\"dweb:/ipfs/QmZ1oM4WDbkTCy3icd8SLqdN84o8fZCgL2Dxr4C5o19KCY\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -45,9 +45,9 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: Apache License 2.0\n\npragma solidity >=0.6.0 <0.8.0;\npragma experimental ABIEncoderV2;\n\ninterface ZkDeposit {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[3] calldata input\n    ) external returns (bool r);\n}\n\ninterface ZkMimblewimble {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[11] calldata input\n    ) external returns (bool r);\n}\n\ninterface ZkMMRInclusion {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[3] calldata input\n    ) external returns (bool r);\n}\n\ninterface ZkRangeProof {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[2] calldata input\n    ) external returns (bool r);\n}\ninterface ZkRollUp1 {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[6] calldata input\n    ) external returns (bool r);\n}\ninterface ZkRollUp2 {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[8] calldata input\n    ) external returns (bool r);\n}\ninterface ZkRollUp4 {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[12] calldata input\n    ) external returns (bool r);\n}\ninterface ZkRollUp8 {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[20] calldata input\n    ) external returns (bool r);\n}\ninterface ZkRollUp16 {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[36] calldata input\n    ) external returns (bool r);\n}\ninterface ZkRollUp32 {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[68] calldata input\n    ) external returns (bool r);\n}\ninterface ZkRollUp64 {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[132] calldata input\n    ) external returns (bool r);\n}\ninterface ZkRollUp128 {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[260] calldata input\n    ) external returns (bool r);\n}\ninterface ZkWithdraw {\n    function verifyTx(\n        uint[2] calldata a,\n        uint[2][2] calldata b,\n        uint[2] calldata c,\n        uint[4] calldata input\n    ) external returns (bool r);\n}\n",
-  "sourcePath": "/Users/gokulalex/Apps/bsc_apps/SemiotNet/contracts/zkInterfaces.sol",
+  "sourcePath": "/Users/gokulalex/Apps/eth_apps/SiddhiNet/contracts/zkInterfaces.sol",
   "ast": {
-    "absolutePath": "/Users/gokulalex/Apps/bsc_apps/SemiotNet/contracts/zkInterfaces.sol",
+    "absolutePath": "/Users/gokulalex/Apps/eth_apps/SiddhiNet/contracts/zkInterfaces.sol",
     "exportedSymbols": {
       "ZkDeposit": [
         17336
@@ -4021,7 +4021,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/Users/gokulalex/Apps/bsc_apps/SemiotNet/contracts/zkInterfaces.sol",
+      "absolutePath": "/Users/gokulalex/Apps/eth_apps/SiddhiNet/contracts/zkInterfaces.sol",
       "exportedSymbols": {
         "ZkDeposit": [
           17336
@@ -8173,7 +8173,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-02-20T12:16:30.896Z",
+  "updatedAt": "2021-02-28T17:03:36.510Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
