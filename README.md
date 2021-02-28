@@ -7,7 +7,7 @@ SiddhiNet is a Secure Streaming Network for Skilled Professionals of Soverign In
 
 ## MATIC TestNet
 - SiddhiCoin >> https://explorer-mumbai.maticvigil.com/tx/0x3ee879cbde3fe03c9a026344a6e0ebc32efc4eb51f8ea8a2398f53705a858d78/
-- SiddjiStream >> https://mumbai-explorer.matic.today/tx/0xa7b35dd2dd3bf34d40040a84486c941c717d496897f57cdc1a6560c0a9da2686/
+- SiddihiStream >> https://mumbai-explorer.matic.today/tx/0xa7b35dd2dd3bf34d40040a84486c941c717d496897f57cdc1a6560c0a9da2686/
 
 ## BSC TestNet
 - SiddhiCoin >> https://testnet.bscscan.com/tx/0xd898b49ea6b1e95aee205ac8560b4be45db0028c5778f0e65b645f004e5e98d8
