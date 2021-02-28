@@ -4,7 +4,9 @@ pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
 import "./Utils.sol";
-import "./InnerProductVerifier.sol";
+import "./SkillSelfVerifier.sol";
+import "./SkillSocialVerifier.sol";
+
 
 contract ZetherVerifier {
     using Utils for uint256;
