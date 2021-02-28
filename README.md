@@ -3,7 +3,7 @@
 
 ## Introduction
 
-SiddhiNet is a Secure Streaming Network for Skilled Professionals of Soverign Individuals and Self Organised Occults. Skills are defined as Self Soverign Commodities of Non Fungible Token Kind. Privacy Preserving Proofs are constructed using Zokrates Toolkit for Skill Self Verification, Sequence Verification and Social Verification. The Solidity Smart Contracts are generated from these Proofs. 
+SiddhiNet is a Secure Streaming Network for Social Token Distribution for Skilled Professionals within Self Organized Networks. Skills are defined as Self Soverign Social Tokens. Privacy Preserving Proofs are constructed using Zokrates Toolkit for Skill Self Verification, Sequence Verification and Summary Verification. Skill Social Tokens are generated as ERC 721. Skill Session Tokens are generated from Chainlink VRF. Skill Selection Oracles are also constructed from ChainLink VRF. Skill Streams are constructed from ERC 1620 Specifications. Skill Social Tokens are anonymized on Zether Framework. 
 
 ## MATIC TestNet
 - SiddhiCoin >> https://explorer-mumbai.maticvigil.com/tx/0x3ee879cbde3fe03c9a026344a6e0ebc32efc4eb51f8ea8a2398f53705a858d78/
