@@ -5,7 +5,7 @@ pragma experimental ABIEncoderV2;
 
 import "./Utils.sol";
 
-contract InnerProductVerifier {
+contract SkillSocialVerifier {
     using Utils for uint256;
     using Utils for Utils.G1Point;
 
