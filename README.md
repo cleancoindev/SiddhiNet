@@ -1,4 +1,4 @@
-# Siddhi Secure Skill Streaming Network (ssT)
+# Siddhi Secure Skill Streaming Social Token Network
 - Self Organized and Self Stablized Skill Streaming Protocol on Matic Network
 
 ## Introduction
