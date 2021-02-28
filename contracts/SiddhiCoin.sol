@@ -7,6 +7,7 @@ import "./ReentrancyGuard.sol";
 import "./Initializable.sol";
 import "./SafeMath.sol";
 import "./Context.sol";
+import "./ERC20.sol";
 
 /**
  * @title SiddhiCoin
@@ -21,7 +22,7 @@ import "./Context.sol";
  * with insufficient funds since no tokens will be issued there.
  */
  
-contract SiddhiCoin is Initializable, ReentrancyGuard, Context  {
+contract SiddhiCoin is Context, Initializable, ReentrancyGuard  {
 
 
     using SafeMath for uint256;
@@ -33,8 +34,8 @@ contract SiddhiCoin is Initializable, ReentrancyGuard, Context  {
     // ERC20 BASIC DATA
     mapping(address => uint256) internal balances;
     uint256 internal totalSupply_;
-    string public constant name = "BCC"; // solium-disable-line uppercase
-    string public constant symbol = "BCC"; // solium-disable-line uppercase
+    string public constant name = "SCC"; // solium-disable-line uppercase
+    string public constant symbol = "SCC"; // solium-disable-line uppercase
     uint8 public constant decimals = 18; // solium-disable-line uppercase
 
     // ERC20 DATA
