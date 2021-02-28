@@ -3,7 +3,7 @@
 
 ## Introduction
 
-SiddhiNet is a Secure Streaming Network for Skilled Professionals of Soverign Individuals and Self Organised Occults. 
+SiddhiNet is a Secure Streaming Network for Skilled Professionals of Soverign Individuals and Self Organised Occults. Skills are defined as Self Soverign Commodities of Non Fungible Token Kind. Skill Verifier is constructed as a Privacy Preserving Token.
 
 ## MATIC TestNet
 - SiddhiCoin >> https://explorer-mumbai.maticvigil.com/tx/0x3ee879cbde3fe03c9a026344a6e0ebc32efc4eb51f8ea8a2398f53705a858d78/
