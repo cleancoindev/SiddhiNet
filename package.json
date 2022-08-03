@@ -24,6 +24,6 @@
   "homepage": "https://github.com/LatticeLabVentures/Bismuth#readme",
   "dependencies": {
     "@chainlink/contracts": "^0.1.6",
-    "@openzeppelin/contracts": "^3.4.0"
+    "@openzeppelin/contracts": "^4.7.2"
   }
 }
